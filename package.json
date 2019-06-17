@@ -1,11 +1,12 @@
 {
   "name": "gatsby-plugin-load-script",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Add external libraries to your generated html pages",
   "main": "index.js",
   "scripts": {
     "build": "babel src --out-dir . --ignore **/__tests__",
-    "prepare": "cross-env NODE_ENV=production npm run build",
+    "prepare": "cross-env NODE_ENV=production yarn build",
+    "prepublish": "yarn test",
     "test": "jest",
     "test:update": "jest --u",
     "test:watch": "jest --watch",
