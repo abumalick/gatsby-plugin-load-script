@@ -4,23 +4,40 @@
   "description": "Add external libraries to your generated html pages",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src --out-dir . --ignore **/__tests__",
+    "prepare": "cross-env NODE_ENV=production npm run build",
+    "watch": "babel -w src --out-dir . --ignore **/__tests__"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.4.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "babel-preset-gatsby-package": "^0.1.4",
+    "cross-env": "^5.2.0",
+    "react": "^16.8.6"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.0.0"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/abumalick/gatsby-plugin-load-script.git"
   },
-  "keywords": [
-    "gatsby",
-    "gatsby-plugin",
-    "plugin",
-    "script",
-    "library"
-  ],
   "author": "abumalick <abdullah.hilson@gmail.com> (https://asbab.net)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/abumalick/gatsby-plugin-load-script/issues"
   },
-  "homepage": "https://github.com/abumalick/gatsby-plugin-load-script#readme"
+  "homepage": "https://github.com/abumalick/gatsby-plugin-load-script",
+  "keywords": [
+    "sentry",
+    "sentry-sdk",
+    "gatsby",
+    "gatsby-plugin",
+    "plugin",
+    "script",
+    "library"
+  ]
 }
