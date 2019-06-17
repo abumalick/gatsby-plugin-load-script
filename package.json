@@ -1,0 +1,26 @@
+{
+  "name": "gatsby-plugin-load-script",
+  "version": "1.0.0",
+  "description": "Add external libraries to your generated html pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/abumalick/gatsby-plugin-load-script.git"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "plugin",
+    "script",
+    "library"
+  ],
+  "author": "abumalick <abdullah.hilson@gmail.com> (https://asbab.net)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abumalick/gatsby-plugin-load-script/issues"
+  },
+  "homepage": "https://github.com/abumalick/gatsby-plugin-load-script#readme"
+}
