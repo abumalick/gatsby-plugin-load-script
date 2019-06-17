@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-export const onRenderBody = ({ setPostBodyComponents }, pluginOptions) => {
+export const onRenderBody = ({setPostBodyComponents}, pluginOptions) => {
   const {
     plugins, // internal to gatsby
     disable, // should we disable the plugin ?
@@ -13,12 +13,12 @@ export const onRenderBody = ({ setPostBodyComponents }, pluginOptions) => {
     charset = 'utf8',
     type = 'text/javascript',
     ...options
-  } = pluginOptions;
+  } = pluginOptions
 
   if (!src) {
     throw new Error(
       'gatsby-plugin-load-script needs a "src" option in order to work correctly',
-    );
+    )
   }
 
   const finalOptions = {
@@ -29,29 +29,33 @@ export const onRenderBody = ({ setPostBodyComponents }, pluginOptions) => {
     charset,
     async,
     ...options,
-  };
-  let optionsAsString = '';
+  }
+  const optionArray = []
   Object.entries(finalOptions).forEach(([property, value]) => {
     if (value !== undefined) {
-      if (property === 'onerror' || property === 'onload') {
-        optionsAsString += `script.${property}=${value};`;
+      if (
+        typeof value !== 'string' ||
+        property === 'onerror' ||
+        property === 'onload'
+      ) {
+        optionArray.push(`script.${property}=${value};`)
       } else {
-        optionsAsString += `script.${property}="${value}";`;
+        optionArray.push(`script.${property}="${value}";`)
       }
     }
-  });
+  })
   if (!disable)
     setPostBodyComponents([
       <script
         key={src}
         dangerouslySetInnerHTML={{
-          __html: `
-                        var head = document.head || document.getElementsByTagName('head')[0];
-                        var script = document.createElement('script');
-                        ${optionsAsString}
-                        head.appendChild(script);
-                    `,
+          __html: [
+            'var head = document.head || document.getElementsByTagName("head")[0];',
+            'var script = document.createElement("script");',
+            ...optionArray,
+            'head.appendChild(script);',
+          ].join(process.env.NODE_ENV === 'production' ? '' : '\n'),
         }}
       />,
-    ]);
-};
+    ])
+}
