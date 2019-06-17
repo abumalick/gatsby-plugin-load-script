@@ -16,6 +16,7 @@
     "@babel/core": "^7.4.5",
     "babel-preset-gatsby-package": "^0.1.4",
     "cross-env": "^5.2.0",
+    "prettier": "^1.18.2",
     "react": "^16.8.6"
   },
   "peerDependencies": {
