@@ -16,7 +16,7 @@ module.exports = {
       },
     },
   ],
-};
+}
 ```
 
-Inspired by: (load-script)[https://www.npmjs.com/package/load-script]
+Inspired by: [load-script](https://www.npmjs.com/package/load-script)
