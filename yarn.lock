@@ -1218,10 +1218,10 @@ babel-preset-gatsby-package@^0.1.4:
     "@babel/preset-flow" "^7.0.0"
     "@babel/preset-react" "^7.0.0"
 
-babel-preset-gatsby@^0.1.11:
-  version "0.1.11"
-  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-0.1.11.tgz#684a1c940f3cec9b31e1948d566a5837e18c715c"
-  integrity sha512-n8Tg1r1J9juDc8GI0afrOFrEJ4No+lfylcYN2QLi90dvGl9VlfZIqoEf9bpw1maop+Ksz56NavxP6U0BHeZLqg==
+babel-preset-gatsby@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-0.2.0.tgz#3781c2a21b12e426f49cd5ca7396649640a1957f"
+  integrity sha512-H72dutotktSdO+dAmj/Xis4ZVXZ66nk3i2AekwatLNGhRBiZ/zGnZhIhDa9umkKGaQ8mVVcR9LgWFaMy/BJIRA==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.0.0"
     "@babel/plugin-syntax-dynamic-import" "^7.0.0"
