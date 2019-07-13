@@ -17,4 +17,4 @@ jobs:
             - /home/circleci/.yarn
       - run:
           name: Run Tests
-          command: yarn test
+          command: yarn test:cov
