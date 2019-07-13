@@ -1,9 +1,17 @@
 # gatsby-plugin-load-script
 
-![npm](https://img.shields.io/npm/v/gatsby-plugin-load-script.svg?style=popout&link=https://www.npmjs.com/package/gatsby-plugin-load-script)
-![npm](https://img.shields.io/npm/dw/gatsby-plugin-load-script.svg?style=popout&link=https://www.npmjs.com/package/gatsby-plugin-load-script)
-![CircleCI](https://img.shields.io/circleci/build/github/abumalick/gatsby-plugin-load-script.svg?label=jest&style=popout&link=https://circleci.com/gh/abumalick/gatsby-plugin-load-script)
-![Codecov](https://img.shields.io/codecov/c/github/abumalick/gatsby-plugin-load-script.svg?style=popout&link=https://codecov.io/gh/abumalick/gatsby-plugin-load-script)
+<a href="https://www.npmjs.com/package/gatsby-plugin-load-script">
+<img src="https://img.shields.io/npm/v/gatsby-plugin-load-script.svg?style=popout" alt="Current npm package version" />
+</a>
+<a href="https://www.npmjs.com/package/gatsby-plugin-load-script">
+<img src="https://img.shields.io/npm/dw/gatsby-plugin-load-script.svg?style=popout" alt="Downloads per month on npm." title="Downloads per month on npm." />
+</a>
+<a href="https://circleci.com/gh/abumalick/gatsby-plugin-load-script">
+<img src="https://img.shields.io/circleci/build/github/abumalick/gatsby-plugin-load-script.svg?label=tests&style=popout" alt="Current CircleCI build status." />
+</a>
+<a href="https://codecov.io/gh/abumalick/gatsby-plugin-load-script">
+<img src="https://img.shields.io/codecov/c/github/abumalick/gatsby-plugin-load-script.svg?style=popout" alt="Current tests coverage" />
+</a>
 
 Add external libraries to your Gatsby website
 
