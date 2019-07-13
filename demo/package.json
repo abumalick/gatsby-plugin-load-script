@@ -1,0 +1,23 @@
+{
+  "name": "using-gatsby-plugin-load-script",
+  "version": "1.0.0",
+  "description": "Gatsby example site using gatsby-plugin-load-script",
+  "author": "abumalick",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "gatsby": "^2.13.19",
+    "gatsby-plugin-load-script": "^1.0.3",
+    "gatsby-plugin-netlify": "^2.1.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}

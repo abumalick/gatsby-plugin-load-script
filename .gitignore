@@ -62,3 +62,7 @@ typings/
 
 # builded files
 /gatsby-ssr.js
+
+# demo build files
+demo/.cache
+demo/public
