@@ -1,9 +1,9 @@
 # gatsby-plugin-load-script
 
-![npm](https://img.shields.io/npm/v/gatsby-plugin-load-script.svg?style=popout)
-![npm](https://img.shields.io/npm/dw/gatsby-plugin-load-script.svg?style=popout)
-![CircleCI](https://img.shields.io/circleci/build/github/abumalick/gatsby-plugin-load-script.svg?label=jest&style=popout)
-![Codecov](https://img.shields.io/codecov/c/github/abumalick/gatsby-plugin-load-script.svg?style=popout)
+![npm](https://img.shields.io/npm/v/gatsby-plugin-load-script.svg?style=popout&link=https://www.npmjs.com/package/gatsby-plugin-load-script)
+![npm](https://img.shields.io/npm/dw/gatsby-plugin-load-script.svg?style=popout&link=https://www.npmjs.com/package/gatsby-plugin-load-script)
+![CircleCI](https://img.shields.io/circleci/build/github/abumalick/gatsby-plugin-load-script.svg?label=jest&style=popout&link=https://circleci.com/gh/abumalick/gatsby-plugin-load-script)
+![Codecov](https://img.shields.io/codecov/c/github/abumalick/gatsby-plugin-load-script.svg?style=popout&link=https://codecov.io/gh/abumalick/gatsby-plugin-load-script)
 
 Add external libraries to your Gatsby website
 
