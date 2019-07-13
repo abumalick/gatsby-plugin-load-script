@@ -36,3 +36,4 @@ examples
 # demo website
 demo
 netlify.toml
+.netlify
