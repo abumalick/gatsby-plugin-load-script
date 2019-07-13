@@ -1,4 +1,6 @@
 module.exports = {
+  coverageDirectory: './coverage/',
+  collectCoverage: true,
   transform: {
     '^.+\\.jsx?$': '<rootDir>/jest-preprocess.js',
   },

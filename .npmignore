@@ -37,3 +37,5 @@ examples
 demo
 netlify.toml
 .netlify
+
+.circleci
