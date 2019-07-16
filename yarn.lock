@@ -623,7 +623,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.0.0"
 
-"@babel/plugin-transform-spread@^7.2.0":
+"@babel/plugin-transform-spread@^7.2.0", "@babel/plugin-transform-spread@^7.2.2":
   version "7.2.2"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-spread/-/plugin-transform-spread-7.2.2.tgz#3103a9abe22f742b6d406ecd3cd49b774919b406"
   integrity sha512-KWfky/58vubwtS0hLqEnrWJjsMGaOeSBn90Ezn5Jeg9Z8KKHmELbP1yGylMlm5N6TPKeY9A2+UaSYLdxahg01w==
@@ -1249,13 +1249,14 @@ babel-preset-gatsby-package@^0.2.0:
     babel-plugin-dynamic-import-node "^1.2.0"
 
 babel-preset-gatsby@^0.2.0:
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-0.2.5.tgz#b7a62661df83052da86a925cb3581bf454db83b1"
-  integrity sha512-mzu3FPGtfeIb02DtP7XEi6I6yBo3UA87DH036m5fsEvwRgeeUkpE2AqCW05bCwK5U+IgNN64h7b6/9+MaNcaBQ==
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-0.2.6.tgz#d9cc408e75afbb7ba486d6b6ef09f43f90d60e0b"
+  integrity sha512-n30hG8EgPgiuK+gH1exlmKhi4f/0qaSm+bUzDEXdApa4Bhw2ndlRVDOwvuC8Anb+VAzFKeQMZY85DOsNoocJ4w==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.0.0"
     "@babel/plugin-syntax-dynamic-import" "^7.0.0"
     "@babel/plugin-transform-runtime" "^7.0.0"
+    "@babel/plugin-transform-spread" "^7.2.2"
     "@babel/preset-env" "^7.4.1"
     "@babel/preset-react" "^7.0.0"
     "@babel/runtime" "^7.4.5"
