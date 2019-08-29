@@ -13,11 +13,11 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
-    "dotenv": "^8.0.0",
-    "gatsby": "^2.13.19",
-    "gatsby-plugin-load-script": "^1.0.3",
-    "gatsby-plugin-netlify": "^2.1.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "dotenv": "^8.1.0",
+    "gatsby": "^2.14.3",
+    "gatsby-plugin-load-script": "^1.0.6",
+    "gatsby-plugin-netlify": "^2.1.10",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   }
 }
