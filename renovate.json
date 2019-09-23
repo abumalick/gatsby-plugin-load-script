@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "config:base",
+    ":automergePatch",
+    ":automergeMinor",
+    ":disableRateLimiting"
+  ],
+  "minor": {
+    "automergeType": "pr"
+  },
+  "major": {
+    "automergeType": "pr",
+    "masterIssueApproval": true
+  },
+  "patch": {
+    "automergeType": "branch"
+  },
+  "masterIssue": true,
+  "masterIssueAutoclose": true,
+  "rangeStrategy": "bump",
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": ["security"]
+  }
+}
