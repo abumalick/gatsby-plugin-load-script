@@ -1362,10 +1362,10 @@ babel-preset-gatsby-package@^0.2.5:
     babel-plugin-dynamic-import-node "^1.2.0"
     core-js "^2.6.9"
 
-babel-preset-gatsby@^0.2.14:
-  version "0.2.14"
-  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-0.2.14.tgz#2712a7dacf73d0b2f18d380180614c5587701c98"
-  integrity sha512-D/zj3RNm52j6k2mzmoF2YxTKGaDs0lhp6v1l3WCDne1kmv9PIb/R8GovcsFvqXVF1FJ0ajNZvyhsJK/eqyGfHQ==
+babel-preset-gatsby@^0.2.15:
+  version "0.2.15"
+  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-0.2.15.tgz#1f300e30829461da8ddc9414ae077b15a44634de"
+  integrity sha512-B4kH7BIS6Qh/R/kO14eZpfLZ+fEk3YnEm2F9A/bZhstcAmFZf9WXFOVbLCEZVv/R8De5LwGVt/FXgoPYKVBUrw==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.5.5"
     "@babel/plugin-syntax-dynamic-import" "^7.2.0"
