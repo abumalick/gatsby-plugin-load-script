@@ -21,8 +21,8 @@
     "@babel/cli": "^7.6.4",
     "@babel/core": "^7.6.4",
     "babel-jest": "^24.9.0",
-    "babel-preset-gatsby": "^0.2.19",
-    "babel-preset-gatsby-package": "^0.2.8",
+    "babel-preset-gatsby": "^0.2.20",
+    "babel-preset-gatsby-package": "^0.2.9",
     "codecov": "^3.6.1",
     "cross-env": "^6.0.3",
     "jest": "^24.9.0",
@@ -30,7 +30,7 @@
     "react": "^16.10.2"
   },
   "peerDependencies": {
-    "gatsby": "^2.16.0"
+    "gatsby": "^2.16.1"
   },
   "repository": {
     "type": "git",
