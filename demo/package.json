@@ -14,9 +14,9 @@
   },
   "dependencies": {
     "dotenv": "^8.2.0",
-    "gatsby": "^2.17.4",
+    "gatsby": "^2.17.5",
     "gatsby-plugin-load-script": "^1.0.6",
-    "gatsby-plugin-netlify": "^2.1.22",
+    "gatsby-plugin-netlify": "^2.1.23",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
   }
