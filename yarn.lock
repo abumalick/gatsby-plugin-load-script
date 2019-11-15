@@ -1455,13 +1455,6 @@ babel-jest@^24.9.0:
     chalk "^2.4.2"
     slash "^2.0.0"
 
-babel-plugin-dynamic-import-node@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-dynamic-import-node/-/babel-plugin-dynamic-import-node-1.2.0.tgz#f91631e703e0595e47d4beafbb088576c87fbeee"
-  integrity sha512-yeDwKaLgGdTpXL7RgGt5r6T4LmnTza/hUn5Ul8uZSGGMtEjYo13Nxai7SQaGCTEzUtg9Zq9qJn0EjEr7SeSlTQ==
-  dependencies:
-    babel-plugin-syntax-dynamic-import "^6.18.0"
-
 babel-plugin-dynamic-import-node@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-dynamic-import-node/-/babel-plugin-dynamic-import-node-2.3.0.tgz#f00f507bdaa3c3e3ff6e7e5e98d90a7acab96f7f"
@@ -1494,20 +1487,15 @@ babel-plugin-macros@^2.6.1:
     cosmiconfig "^5.2.0"
     resolve "^1.10.0"
 
-babel-plugin-syntax-dynamic-import@^6.18.0:
-  version "6.18.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-syntax-dynamic-import/-/babel-plugin-syntax-dynamic-import-6.18.0.tgz#8d6a26229c83745a9982a441051572caa179b1da"
-  integrity sha1-jWomIpyDdFqZgqRBBRVyyqF5sdo=
-
 babel-plugin-transform-react-remove-prop-types@^0.4.24:
   version "0.4.24"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-react-remove-prop-types/-/babel-plugin-transform-react-remove-prop-types-0.4.24.tgz#f2edaf9b4c6a5fbe5c1d678bfb531078c1555f3a"
   integrity sha512-eqj0hVcJUR57/Ug2zE1Yswsw4LhuqqHhD+8v120T1cl3kjg76QwtyBrdIk4WVwK+lAhBJVYCd/v+4nc4y+8JsA==
 
-babel-preset-gatsby-package@^0.2.10:
-  version "0.2.10"
-  resolved "https://registry.yarnpkg.com/babel-preset-gatsby-package/-/babel-preset-gatsby-package-0.2.10.tgz#667a0f1df7075d4fcad2b0f61f11251591db2003"
-  integrity sha512-yjejicXNu8liF87zg3OtL9FO3p+//rKZYtr94pZakQBfKbuvCstDEl6bk6Hai4RQJC7vb/ZJwzw73uwQNzQGzg==
+babel-preset-gatsby-package@^0.2.11:
+  version "0.2.11"
+  resolved "https://registry.yarnpkg.com/babel-preset-gatsby-package/-/babel-preset-gatsby-package-0.2.11.tgz#3a8e193d7eeb5311a98e8e35f1f120849f2804d5"
+  integrity sha512-NEvQZWTTSp8mMIPX4C7SpAQZgI0NzR4nFccJgNCNbU2Pw3TIyVamboLQPmLJIZJAEGTURqomqPgKFAHR7nOMAw==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.7.0"
     "@babel/plugin-proposal-optional-chaining" "^7.6.0"
@@ -1516,13 +1504,13 @@ babel-preset-gatsby-package@^0.2.10:
     "@babel/preset-env" "^7.7.1"
     "@babel/preset-flow" "^7.0.0"
     "@babel/preset-react" "^7.7.0"
-    babel-plugin-dynamic-import-node "^1.2.0"
+    babel-plugin-dynamic-import-node "^2.3.0"
     core-js "^2.6.10"
 
-babel-preset-gatsby@^0.2.21:
-  version "0.2.21"
-  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-0.2.21.tgz#38c885be17264dc22e191a970208a0a1a2eccd95"
-  integrity sha512-AAemLYsdsWO0NetN1FX67m8kDifk0KUUvwsBuyKoF6zptGExO3PqosJpUELhBP+5t2J5VV/Pl8JPJWOIqbpE6w==
+babel-preset-gatsby@^0.2.22:
+  version "0.2.22"
+  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-0.2.22.tgz#116cd8d7982f07b8063c783ac3ad3bc849ce3238"
+  integrity sha512-ORVZZ2cGT+JLH5szbEyDlO8+opqdZ176KaKm2Bkn/dZrN0BMkFW4ZNLHDx+gaUQyv/AqW61D+qlJUN9zSUzNKQ==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.7.0"
     "@babel/plugin-syntax-dynamic-import" "^7.2.0"
@@ -1531,7 +1519,7 @@ babel-preset-gatsby@^0.2.21:
     "@babel/preset-env" "^7.7.1"
     "@babel/preset-react" "^7.7.0"
     "@babel/runtime" "^7.7.2"
-    babel-plugin-dynamic-import-node "^1.2.0"
+    babel-plugin-dynamic-import-node "^2.3.0"
     babel-plugin-macros "^2.6.1"
     babel-plugin-transform-react-remove-prop-types "^0.4.24"
 
