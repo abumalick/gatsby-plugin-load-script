@@ -15,11 +15,11 @@
     "watch": "babel -w src --out-dir . --ignore **/__tests__"
   },
   "dependencies": {
-    "@babel/runtime": "^7.7.4"
+    "@babel/runtime": "^7.7.5"
   },
   "devDependencies": {
-    "@babel/cli": "^7.7.4",
-    "@babel/core": "^7.7.4",
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
     "babel-jest": "^24.9.0",
     "babel-preset-gatsby": "^0.2.23",
     "babel-preset-gatsby-package": "^0.2.12",
