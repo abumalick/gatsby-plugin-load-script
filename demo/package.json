@@ -16,7 +16,7 @@
     "dotenv": "^8.2.0",
     "gatsby": "^2.19.21",
     "gatsby-plugin-load-script": "^1.0.6",
-    "gatsby-plugin-netlify": "^2.1.32",
+    "gatsby-plugin-netlify": "^2.1.33",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   }
