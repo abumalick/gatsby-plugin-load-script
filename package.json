@@ -24,7 +24,7 @@
     "babel-preset-gatsby": "^0.2.29",
     "babel-preset-gatsby-package": "^0.2.16",
     "codecov": "^3.6.5",
-    "cross-env": "^6.0.3",
+    "cross-env": "^7.0.1",
     "jest": "^24.9.0",
     "prettier": "^1.19.1",
     "react": "^16.13.0"
