@@ -1627,10 +1627,10 @@ babel-preset-gatsby-package@^0.2.17:
     babel-plugin-dynamic-import-node "^2.3.0"
     core-js "^2.6.11"
 
-babel-preset-gatsby@^0.2.31:
-  version "0.2.31"
-  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-0.2.31.tgz#d72f5bf40a27c8c4053a53bd0adf0f03cf186fd4"
-  integrity sha512-2PhWjAli3hXcK0ASieOQZgiU4b6THA5/OWJSz5ZM3snmf1oqlWqhRJfzj6RXu2BkwvoGI5Hu9krEcVEgZKGTeQ==
+babel-preset-gatsby@^0.2.32:
+  version "0.2.32"
+  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-0.2.32.tgz#fbfbb553cc4065e440c49c4143408ef4f0c01f85"
+  integrity sha512-YzDk+IUASrFJS9SFv+pj35lTtvyuh7dhkjvoZZMqUCet1B1epOdR72U23rhGFniIZVtZKSX1ubvtZ9ryf8LNBg==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.7.4"
     "@babel/plugin-proposal-nullish-coalescing-operator" "^7.7.4"
@@ -1644,7 +1644,7 @@ babel-preset-gatsby@^0.2.31:
     babel-plugin-dynamic-import-node "^2.3.0"
     babel-plugin-macros "^2.8.0"
     babel-plugin-transform-react-remove-prop-types "^0.4.24"
-    gatsby-core-utils "^1.0.30"
+    gatsby-core-utils "^1.0.31"
 
 babel-preset-jest@^24.9.0:
   version "24.9.0"
@@ -2438,10 +2438,10 @@ function-bind@^1.1.1:
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
 
-gatsby-core-utils@^1.0.30:
-  version "1.0.30"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.0.30.tgz#c2b61017405b01e2f34f2c57117b4716c75e010f"
-  integrity sha512-+WYFxf9dT4u67vecXdROe9iF2jzPKoTVbWI3FYLCcNANY2Y/vEec11vhG5FnBHdLpgmD3cnLPdhCAileKWBldA==
+gatsby-core-utils@^1.0.31:
+  version "1.0.31"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.0.31.tgz#f0a3c37c46a0429f5ce10fee0c01a60718a36216"
+  integrity sha512-QvyAaC2nK+34giEPn2eMMkruvzyz4cD3+68RFV9A71HDuLU7FTgnhahyV8QmqZdjK2zVnhEIs2rGuf4weEuu1g==
   dependencies:
     ci-info "2.0.0"
     configstore "^5.0.0"
