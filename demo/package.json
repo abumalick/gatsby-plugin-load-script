@@ -17,7 +17,7 @@
     "gatsby": "^2.19.49",
     "gatsby-plugin-load-script": "^1.0.6",
     "gatsby-plugin-netlify": "^2.1.35",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
