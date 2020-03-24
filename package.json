@@ -30,7 +30,7 @@
     "react": "^16.13.1"
   },
   "peerDependencies": {
-    "gatsby": "^2.20.3"
+    "gatsby": "^2.20.4"
   },
   "repository": {
     "type": "git",
