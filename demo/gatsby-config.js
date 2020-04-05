@@ -5,6 +5,7 @@ require('dotenv').config({
 module.exports = {
   plugins: [
     {
+      // resolve: require.resolve(`../`), // You don't need this line
       // https://docs.sentry.io/error-reporting/quickstart/?platform=browser
       resolve: 'gatsby-plugin-load-script',
       options: {
@@ -14,12 +15,14 @@ module.exports = {
         integrity:
           'sha384-Nrg+xiw+qRl3grVrxJtWazjeZmUwoSt0FAVsbthlJ5OMpx0G08bqIq3b/v0hPjhB',
         onLoad: `() => {
-          console.log("Callback called");
+          console.log(" Sentry callback called");
           Sentry.init({dsn:"${process.env.SENTRY_DSN}"})
         }`,
       },
     },
+
     {
+      // resolve: require.resolve(`../`), // You don't need this line
       resolve: 'gatsby-plugin-load-script',
       options: {
         src: '/test-script.js',
