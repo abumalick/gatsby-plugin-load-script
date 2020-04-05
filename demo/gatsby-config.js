@@ -19,6 +19,12 @@ module.exports = {
         }`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: '/test-script.js',
+      },
+    },
 
     'gatsby-plugin-netlify',
   ],
