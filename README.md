@@ -37,7 +37,7 @@ yarn add gatsby-plugin-load-script
 // gatsby-config.js
 module.exports = {
   plugins: [
-    // ...
+    // https://docs.sentry.io/error-reporting/quickstart/?platform=browser
     {
       resolve: 'gatsby-plugin-load-script',
       options: {
