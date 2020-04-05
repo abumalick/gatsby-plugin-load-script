@@ -9,7 +9,6 @@ export const onRenderBody = ({setPostBodyComponents}, pluginOptions) => {
     onError,
     onload,
     onLoad,
-    async = true,
     charset = 'utf8',
     type = 'text/javascript',
     ...options
@@ -27,21 +26,24 @@ export const onRenderBody = ({setPostBodyComponents}, pluginOptions) => {
     onload: onLoad || onload,
     type,
     charset,
-    async,
     ...options,
+  }
+  if (!('async' in finalOptions) && !('defer' in finalOptions)) {
+    // Async should be true by default
+    finalOptions['async'] = true
   }
   const optionArray = []
   Object.entries(finalOptions).forEach(([property, value]) => {
-    if (value !== undefined) {
-      if (
-        typeof value !== 'string' ||
-        property === 'onerror' ||
-        property === 'onload'
-      ) {
-        optionArray.push(`script.${property}=${value};`)
-      } else {
-        optionArray.push(`script.setAttribute("${property}", "${value}");`)
-      }
+    if (value === undefined || value === false) {
+      return
+    }
+    if (property === 'onerror' || property === 'onload') {
+      optionArray.push(`script.setAttribute("${property}", ${value});`)
+    } else if (value === true) {
+      // https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute
+      optionArray.push(`script.setAttribute("${property}", "");`)
+    } else {
+      optionArray.push(`script.setAttribute("${property}", "${value}");`)
     }
   })
   if (!disable)
