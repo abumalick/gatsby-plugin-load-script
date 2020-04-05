@@ -8,11 +8,13 @@ Array [
         Object {
           "__html": "var head = document.head || document.getElementsByTagName(\\"head\\")[0];
 var script = document.createElement(\\"script\\");
-script.src=\\"https://browser.sentry-cdn.com/5.4.0/bundle.min.js\\";
+script.setAttribute(\\"src\\", \\"https://browser.sentry-cdn.com/5.15.4/bundle.min.js\\");
 script.onload=() => Sentry.init({dsn:\\"this-is-a-testing-dsn\\"});
-script.type=\\"text/javascript\\";
-script.charset=\\"utf8\\";
+script.setAttribute(\\"type\\", \\"text/javascript\\");
+script.setAttribute(\\"charset\\", \\"utf8\\");
 script.async=true;
+script.setAttribute(\\"integrity\\", \\"sha384-Nrg+xiw+qRl3grVrxJtWazjeZmUwoSt0FAVsbthlJ5OMpx0G08bqIq3b/v0hPjhB\\");
+script.setAttribute(\\"crossorigin\\", \\"anonymous\\");
 head.appendChild(script);",
         }
       }

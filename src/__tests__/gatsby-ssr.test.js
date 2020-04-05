@@ -22,7 +22,10 @@ describe('onRenderBody should create post body components', () => {
     let SENTRY_DSN
     simpleORB({
       disable: !SENTRY_DSN,
-      src: 'https://browser.sentry-cdn.com/5.4.0/bundle.min.js',
+      src: 'https://browser.sentry-cdn.com/5.15.4/bundle.min.js',
+      integrity:
+        'sha384-Nrg+xiw+qRl3grVrxJtWazjeZmUwoSt0FAVsbthlJ5OMpx0G08bqIq3b/v0hPjhB',
+      crossorigin: 'anonymous',
       onLoad: `() => Sentry.init({dsn:"${SENTRY_DSN}"})`,
     })
     expect(setPostBodyComponents.mock.calls.length).toBe(0)
@@ -32,7 +35,10 @@ describe('onRenderBody should create post body components', () => {
     const SENTRY_DSN = 'this-is-a-testing-dsn'
     simpleORB({
       disable: !SENTRY_DSN,
-      src: 'https://browser.sentry-cdn.com/5.4.0/bundle.min.js',
+      src: 'https://browser.sentry-cdn.com/5.15.4/bundle.min.js',
+      integrity:
+        'sha384-Nrg+xiw+qRl3grVrxJtWazjeZmUwoSt0FAVsbthlJ5OMpx0G08bqIq3b/v0hPjhB',
+      crossorigin: 'anonymous',
       onLoad: `() => Sentry.init({dsn:"${SENTRY_DSN}"})`,
     })
     expect(setPostBodyComponents.mock.calls.length).toBe(1)

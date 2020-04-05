@@ -40,7 +40,7 @@ export const onRenderBody = ({setPostBodyComponents}, pluginOptions) => {
       ) {
         optionArray.push(`script.${property}=${value};`)
       } else {
-        optionArray.push(`script.${property}="${value}";`)
+        optionArray.push(`script.setAttribute("${property}", "${value}");`)
       }
     }
   })
