@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-load-script",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Add external libraries to your generated html pages",
   "main": "index.js",
   "scripts": {
