@@ -23,7 +23,7 @@ npm install gatsby-plugin-load-script
 
 or
 
-```
+```bash
 yarn add gatsby-plugin-load-script
 ```
 
@@ -71,7 +71,7 @@ SENTRY_DSN=https://<your-sentry-dsn-key>@sentry.io/<project>
 
 Add dotenv to your `gatsby-config.js`
 
-```
+```js
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
@@ -84,6 +84,21 @@ In **production**, add the env variable to your netlify site / docker container.
 #### More information on Sentry SDK
 
 https://docs.sentry.io/error-reporting/quickstart/?platform=browser
+
+### Local script from static folder
+
+1. Create a folder named `static` at the root of your gatsby app
+2. Place your script in it
+3. Add the following configuration in `gatsby-config.js`
+
+```js
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: '/test-script.js', // Change to the script filename
+      },
+    },
+```
 
 ---
 
