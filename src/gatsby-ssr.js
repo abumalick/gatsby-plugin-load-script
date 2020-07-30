@@ -1,9 +1,14 @@
 import React from 'react'
 
-export const onRenderBody = ({setPostBodyComponents}, pluginOptions) => {
+const isAbsolutePath = (path) => /^\/([^\/]|$)/.test(path)
+
+export const onRenderBody = (
+  {pathPrefix, setPostBodyComponents},
+  pluginOptions,
+) => {
   const {
     plugins, // internal to gatsby
-    disable, // should we disable the plugin ?
+    disable, // should we disable the plugin?
     src, // source of the script
     onerror,
     onError,
@@ -21,13 +26,14 @@ export const onRenderBody = ({setPostBodyComponents}, pluginOptions) => {
   }
 
   const finalOptions = {
-    src,
+    src: isAbsolutePath(src) ? `${pathPrefix || ''}${src}` : src,
     onerror: onError || onerror,
     onload: onLoad || onload,
     type,
     charset,
     ...options,
   }
+
   if (!('async' in finalOptions) && !('defer' in finalOptions)) {
     // Async should be true by default
     finalOptions['async'] = true
