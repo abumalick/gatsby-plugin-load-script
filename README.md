@@ -99,6 +99,19 @@ https://docs.sentry.io/error-reporting/quickstart/?platform=browser
       },
     },
 ```
+#### Supporting the [`pathPrefix`](https://www.gatsbyjs.org/docs/path-prefix/)
+
+The following will prefix the `src` with `/demo` in production build.
+
+```js
+    {
+      resolve: 'gatsby-plugin-load-script',
+			pathPrefix: '/demo',
+      options: {
+        src: '/test-script.js', // Change to the script filename
+      },
+    },
+```
 
 ---
 

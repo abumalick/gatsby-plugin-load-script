@@ -2,7 +2,10 @@ require('dotenv').config({
   path: `.env`,
 })
 
+const pathPrefix = process.env.DEMO_USE_PATH_PREFIX ? '/demo' : null
+
 module.exports = {
+  pathPrefix,
   plugins: [
     {
       // resolve: require.resolve(`../`), // You don't need this line

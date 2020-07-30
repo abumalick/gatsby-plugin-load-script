@@ -2,8 +2,11 @@ import {onRenderBody} from '../gatsby-ssr'
 
 const setPostBodyComponents = jest.fn()
 
-const simpleORB = (pluginOptions) =>
-  onRenderBody({setPostBodyComponents}, {plugins: [], ...pluginOptions})
+const simpleORB = (pluginOptions, pathPrefix = '') =>
+  onRenderBody(
+    {setPostBodyComponents, pathPrefix},
+    {plugins: [], ...pluginOptions},
+  )
 
 afterEach(() => {
   setPostBodyComponents.mockClear()
@@ -128,5 +131,59 @@ describe('test differences in production environment', () => {
     ).not.toEqual(expect.stringContaining(`\n`))
 
     process.env.NODE_ENV = old_node_env
+  })
+})
+
+describe('should support pathPrefix', () => {
+  const createPathPrefixTest = ({src, pathPrefix, message, expected}) =>
+    test(message, () => {
+      simpleORB(
+        {
+          src,
+        },
+        pathPrefix,
+      )
+
+      expect(
+        setPostBodyComponents.mock.calls[0][0][0]['props'][
+          'dangerouslySetInnerHTML'
+        ]['__html'],
+      ).toEqual(
+        expect.stringContaining(`script.setAttribute("src", "${expected}");`),
+      )
+    })
+
+  createPathPrefixTest({
+    message: 'adds pathPrefix to absolute paths',
+    pathPrefix: '/test',
+    src: '/test-script.js',
+    expected: '/test/test-script.js',
+  })
+
+  createPathPrefixTest({
+    message: 'does not add pathPrefix to internal urls',
+    pathPrefix: '/test',
+    src: 'test-script.js',
+    expected: 'test-script.js',
+  })
+
+  createPathPrefixTest({
+    message: 'does not add pathPrefix if is undefined',
+    src: 'test-script.js',
+    expected: 'test-script.js',
+  })
+
+  createPathPrefixTest({
+    message: 'does not add pathPrefix to external urls',
+    pathPrefix: '/test',
+    src: 'https://browser.sentry-cdn.com/5.15.4/bundle.min.js',
+    expected: 'https://browser.sentry-cdn.com/5.15.4/bundle.min.js',
+  })
+
+  createPathPrefixTest({
+    message: 'does not add pathPrefix to external urls without protocol',
+    pathPrefix: '/test',
+    src: '//browser.sentry-cdn.com/5.15.4/bundle.min.js',
+    expected: '//browser.sentry-cdn.com/5.15.4/bundle.min.js',
   })
 })
